@@ -1,144 +1,360 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of John Mathew Bertos — multimedia student and creative storyteller.">
-  <title>John Mathew Bertos — Creative Portfolio</title>
+  <meta name="theme-color" content="#080810">
+  <meta name="description" content="John Mathew Bertos — Multimedia Artist Portfolio">
+  <title>John Mathew Bertos | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-:root{--bg:#0b0d12;--panel:#121620;--text:#f4f5f8;--muted:#a2a8b6;--line:rgba(255,255,255,.1);--lime:#c9ff70;--purple:#9c8cff}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 80% 0%,#1b1a31 0,transparent 35%),var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin-inline:auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(11,13,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navbar{width:min(1120px,90%);min-height:76px;margin:auto;display:flex;align-items:center;justify-content:space-between}.logo{font:700 1.45rem 'Space Grotesk';letter-spacing:-.08em}.logo span{color:var(--lime);margin-left:5px}.nav-links{display:flex;gap:30px;color:var(--muted);font-size:.88rem;font-weight:600}.nav-links a{transition:color .25s}.nav-links a:hover{color:var(--lime)}.hero{position:relative;min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.1fr .8fr;align-items:center;gap:70px;padding:95px 0;isolation:isolate}.hero-content{z-index:2}.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.16em;color:var(--lime);margin-bottom:22px}.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime);margin-right:9px}h1,h2,h3{font-family:'Space Grotesk',sans-serif}h1{font-size:clamp(3.5rem,8vw,7.2rem);line-height:.98;letter-spacing:-.075em;margin-bottom:28px}.gradient-text{background:linear-gradient(110deg,var(--lime),#9de8c5 45%,#a69aff);-webkit-background-clip:text;background-clip:text;color:transparent}.tagline{max-width:570px;color:var(--muted);font-size:1.05rem}.tagline strong{color:var(--text)}.hero-buttons{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}.btn{display:inline-flex;align-items:center;gap:16px;padding:13px 21px;border-radius:99px;font-weight:700;font-size:.88rem;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px)}.btn-primary{background:var(--lime);color:#11150b;box-shadow:0 8px 30px #c9ff7020}.btn-primary:hover{box-shadow:0 10px 36px #c9ff7040}.btn-ghost{border:1px solid var(--line);background:#ffffff05}.hero-note{margin-top:50px;color:#777e8d;font-size:.78rem}.hero-note span{color:var(--lime);margin-right:8px}.profile-frame{position:relative;justify-self:end;width:min(410px,100%);padding:12px;border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(145deg,#ffffff12,#ffffff02);transform:rotate(2deg);box-shadow:0 30px 90px #0006;z-index:2}.profile-frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:19px;filter:saturate(.85)}.frame-label{position:absolute;top:25px;left:25px;z-index:2;background:#0b0d12c9;padding:7px 11px;border-radius:8px;font-size:.62rem;letter-spacing:.13em}.profile-frame figcaption{display:flex;justify-content:space-between;padding:15px 5px 3px;font-size:.78rem}.profile-frame figcaption span:last-child{color:var(--muted)}.hero-orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.18;z-index:-1}.orb-one{width:240px;height:240px;background:var(--purple);right:5%;top:15%}.orb-two{width:190px;height:190px;background:var(--lime);left:25%;bottom:5%}.section{padding:110px 0}.section-heading h2,.contact-inner h2{font-size:clamp(2.6rem,6vw,5rem);line-height:1.04;letter-spacing:-.07em}.about-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin-top:45px}.glass{background:linear-gradient(145deg,#ffffff0a,#ffffff03);border:1px solid var(--line);border-radius:24px;backdrop-filter:blur(12px)}.about-copy{padding:36px}.about-copy p{color:#c2c6d0;font-size:1.05rem;line-height:1.9}.about-copy p+p{margin-top:18px}.facts{display:grid;gap:12px}.fact{display:flex;align-items:center;gap:17px;padding:18px 20px;border:1px solid var(--line);border-radius:17px;background:#ffffff04}.fact-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#c9ff7012;color:var(--lime);font-size:1.2rem}.fact h3{font-size:1rem}.fact p{font-size:.8rem;color:var(--muted)}.tool-strip{margin-top:42px;padding-top:25px;border-top:1px solid var(--line)}.tool-strip .eyebrow{margin-bottom:14px}.chips{display:flex;flex-wrap:wrap;gap:9px}.chips span{padding:8px 13px;border:1px solid var(--line);border-radius:99px;color:#c5c9d2;font-size:.8rem;background:#ffffff04}.section-heading-row{display:flex;justify-content:space-between;align-items:end;gap:30px}.section-side{color:var(--muted);font-size:.9rem}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}.project-card{border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#ffffff08,#ffffff02);padding:12px;transition:transform .3s,border-color .3s}.project-card:hover{transform:translateY(-7px);border-color:#c9ff7040}.project-art{height:245px;position:relative;overflow:hidden;border-radius:14px;margin-bottom:18px}.art-tag{position:absolute;top:15px;left:15px;z-index:5;font-size:.62rem;letter-spacing:.13em;color:#fff;background:#0b0d1280;padding:7px 10px;border-radius:7px}.art-illustration{background:linear-gradient(140deg,#f6c77c,#ec8e88 48%,#8279c7)}.sun{position:absolute;width:105px;height:105px;border-radius:50%;background:#ffeaa7;right:17%;top:22%;box-shadow:0 0 55px #ffeaa780}.mountain{position:absolute;bottom:-30px;width:0;height:0;border-left:190px solid transparent;border-right:190px solid transparent}.mountain-a{border-bottom:230px solid #4b4a83;left:-60px}.mountain-b{border-bottom:170px solid #292d53;right:-100px}.art-caption{position:absolute;bottom:25px;left:22px;color:white;font:700 1.65rem 'Space Grotesk';line-height:1;letter-spacing:-.04em}.art-motion{background:radial-gradient(circle at 60% 40%,#6b56c8,#211b49 55%,#111322)}.motion-ring{position:absolute;border:1px solid #c5b7ff75;border-radius:50%;transform:rotate(-25deg)}.ring-a{width:280px;height:130px;left:30px;top:65px}.ring-b{width:220px;height:190px;left:65px;top:25px}.motion-ball{position:absolute;width:65px;height:65px;background:linear-gradient(135deg,#d9ff9b,#7ce5c1);border-radius:50%;left:42%;top:37%;box-shadow:0 0 45px #a8ffbd80}.motion-word{position:absolute;bottom:20px;right:20px;color:#fff;font:700 1.4rem 'Space Grotesk';line-height:1.05;text-align:right}.art-film{background:linear-gradient(145deg,#263f4d,#101b2a)}.film-frame{position:absolute;inset:45px 25px 25px;border:1px solid #ffffff50;border-radius:8px;overflow:hidden;background:linear-gradient(#f2a86e,#c26c72 50%,#3b4c62)}.film-sky{height:55%;background:linear-gradient(#f7b978,#c77c91)}.film-hill{position:absolute;bottom:-30px;left:-20px;width:120%;height:65%;background:#263c4c;transform:rotate(-8deg);border-radius:50% 50% 0 0}.film-sun{position:absolute;width:50px;height:50px;border-radius:50%;background:#ffe1a1;top:25%;right:20%}.film-play{position:absolute;left:calc(50% - 23px);top:45%;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#101522b8;color:white;border:1px solid #ffffff70;font-size:.9rem}.film-label{position:absolute;bottom:17px;left:20px;color:#fff;font:700 1.35rem 'Space Grotesk';line-height:1}.project-info{display:flex;justify-content:space-between;align-items:center;padding:0 7px}.project-type{font-size:.63rem;color:var(--lime);letter-spacing:.12em;font-weight:700}.project-info h3{font-size:1.2rem;margin-top:3px}.project-arrow{color:var(--muted);font-size:1.3rem}.project-desc{padding:10px 7px 9px;color:var(--muted);font-size:.85rem;line-height:1.7}.project-note{font-size:.76rem;color:#747b89;margin-top:20px}.contact-section{margin-top:50px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 70% 100%,#25204470,transparent 55%),#ffffff02}.contact-inner{padding:100px 0}.contact-inner h2{max-width:800px}.contact-copy{color:var(--muted);margin-top:22px}.contact-mail{display:inline-flex;align-items:center;gap:18px;margin-top:28px;font:600 clamp(1.1rem,3vw,1.6rem) 'Space Grotesk';border-bottom:1px solid #c9ff7070;padding-bottom:8px}.contact-mail span{color:var(--lime)}.social-links{display:flex;gap:22px;margin-top:35px;color:var(--muted);font-size:.88rem}.social-links a:hover{color:var(--lime)}.footer{display:flex;align-items:center;justify-content:space-between;padding:27px 0;color:#737a88;font-size:.78rem}.footer .logo{color:var(--text)}
-@media(max-width:850px){.hero{grid-template-columns:1fr;gap:55px;padding:75px 0}.profile-frame{justify-self:center;width:min(360px,85%)}.about-layout{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr 1fr}.section{padding:85px 0}.section-heading-row{align-items:start;flex-direction:column}.section-side br{display:none}}
-@media(max-width:560px){.navbar{min-height:66px}.nav-links{gap:13px;font-size:.73rem}.logo{font-size:1.25rem}.hero{min-height:auto;padding:65px 0}.hero h1{font-size:clamp(3.3rem,15vw,5rem)}.tagline{font-size:.96rem}.hero-note{margin-top:35px}.section{padding:70px 0}.about-copy{padding:25px}.project-grid{grid-template-columns:1fr}.project-art{height:260px}.contact-inner{padding:75px 0}.footer{flex-wrap:wrap;gap:10px}.footer p{width:100%}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-
-.project-tabs{display:flex;flex-wrap:wrap;gap:10px;margin:35px 0 25px}
-.project-tab{border:1px solid var(--line);background:#ffffff05;color:var(--muted);padding:11px 18px;border-radius:999px;font:600 .85rem 'DM Sans',sans-serif;cursor:pointer;transition:all .25s}
-.project-tab:hover{color:var(--text);border-color:#c9ff7060}
-.project-tab.active{background:var(--lime);border-color:var(--lime);color:#11150b}
-.project-panel[hidden]{display:none!important}
-.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.media-card{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#ffffff08,#ffffff02);transition:transform .25s,border-color .25s}
-.media-card:hover{transform:translateY(-4px);border-color:#c9ff7040}
-.media-image-link{display:block;overflow:hidden;background:#141722}
-.media-image{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .35s}
-.media-image-link:hover .media-image{transform:scale(1.035)}
-.media-video{display:block;width:100%;aspect-ratio:16/9;background:#050608;object-fit:contain}
-.media-caption{padding:17px 19px 20px}
-.media-caption .project-type{margin-bottom:4px}
-.media-caption h3{font-size:1.12rem;margin-bottom:3px}
-.media-caption>p:last-child{color:var(--muted);font-size:.82rem}
-.illustrations-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-@media(max-width:700px){.media-grid,.illustrations-grid{grid-template-columns:1fr 1fr}.project-tab{font-size:.78rem;padding:10px 13px}}
-@media(max-width:480px){.media-grid,.illustrations-grid{grid-template-columns:1fr}}
-
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-      <a href="#home" class="logo" aria-label="JMB home">JMB<span>✳</span></a>
-      <div class="nav-links">
-        <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-      </div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="#home" class="logo">JMB<span>.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
+
+    <a href="#contact" class="nav-button">Let's Talk ↗</a>
   </header>
 
-  <main>
-    <section id="home" class="hero wrap">
-      <div class="hero-content">
-        <p class="eyebrow"><span class="status-dot"></span> MULTIMEDIA STUDENT · CREATIVE</p>
-        <h1>Ideas into<br><span class="gradient-text">visual stories.</span></h1>
-        <p class="tagline">Hi, I'm <strong>John Mathew Bertos</strong> — a creative soul drawn to storytelling, bringing imagination to life through colors, motion, and digital artistry.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">Explore my work <span>↗</span></a>
-          <a href="#contact" class="btn btn-ghost">Let's connect</a>
-        </div>
-        <div class="hero-note"><span>✦</span> Creativity · Visual communication · Digital media</div>
-      </div>
-      <figure class="profile-frame">
-        <div class="frame-label">CREATIVE / 2026</div>
-        <img src="./profile.jpg" alt="Portrait of John Mathew Bertos">
-        <figcaption><span>John Mathew Bertos</span><span>Multimedia student</span></figcaption>
-      </figure>
-      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
-    </section>
+  <!-- HERO -->
+  <section class="hero section" id="home">
+    <div class="hero-content">
+      <span class="eyebrow"><span class="status-dot"></span> MULTIMEDIA ARTIST & DESIGNER</span>
 
-    <section id="about" class="section wrap">
-      <div class="section-heading"><p class="eyebrow">01 — A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="gradient-text">Creative by choice.</span></h2></div>
-      <div class="about-layout">
-        <div class="about-copy glass">
-          <p>I am a multimedia student passionate about creativity, digital media, and visual communication. With an early start in animation and art, I have developed skills in digital illustration, animation, editing, and other forms of digital art.</p>
-          <p>I enjoy exploring unique ideas, thinking outside the box, and turning concepts into visually engaging work.</p>
-        </div>
-        <div class="facts">
-          <article class="fact"><span class="fact-icon">✎</span><div><h3>Digital illustration</h3><p>Art, color, and visual detail</p></div></article>
-          <article class="fact"><span class="fact-icon">▶</span><div><h3>Animation & editing</h3><p>Motion, timing, and storytelling</p></div></article>
-          <article class="fact"><span class="fact-icon">✧</span><div><h3>Creative thinking</h3><p>Fresh ideas and open-minded problem solving</p></div></article>
-          <article class="fact"><span class="fact-icon">◎</span><div><h3>Communication</h3><p>Built through school and customer service work</p></div></article>
-        </div>
-      </div>
-      <div class="tool-strip"><span class="eyebrow">MY CREATIVE TOOLKIT</span><div class="chips"><span>Digital Art</span><span>Animation</span><span>Video Editing</span><span>Visual Communication</span><span>Storytelling</span></div></div>
-    </section>
+      <h1>
+        Creative mind.<br>
+        <span class="gradient-text">Digital vision.</span>
+      </h1>
 
-    <section id="projects" class="section wrap">
-      <div class="section-heading section-heading-row"><div><p class="eyebrow">02 — SELECTED WORK</p><h2>Things I've <span class="gradient-text">created.</span></h2></div><p class="section-side">A peek into my creative process<br>and multimedia interests.</p></div>
+      <p class="hero-description">
+        Exploring creativity through film, 3D modeling, animation,
+        and digital illustration.
+      </p>
 
-      <div class="project-tabs" role="tablist" aria-label="Project categories">
-        <button class="project-tab active" role="tab" aria-selected="true" aria-controls="film-panel" id="film-tab" data-panel="film-panel">Film &amp; 2D Animation</button>
-        <button class="project-tab" role="tab" aria-selected="false" aria-controls="model-panel" id="model-tab" data-panel="model-panel">3D Modeling</button>
-        <button class="project-tab" role="tab" aria-selected="false" aria-controls="art-panel" id="art-tab" data-panel="art-panel">Digital Illustrations</button>
+      <div class="hero-buttons">
+        <a href="#projects" class="button-primary">Explore My Work ↗</a>
+        <a href="#about" class="button-secondary">About Me</a>
       </div>
 
-      <div class="project-panel active" id="film-panel" role="tabpanel" aria-labelledby="film-tab">
-        <div class="media-grid">
-          <article class="media-card">
-            <video class="media-video" controls preload="metadata" playsinline poster="./assets/film/film-poster.jpg"><source src="./assets/film/film.mp4" type="video/mp4">Your browser does not support video.</video>
-            <div class="media-caption"><p class="project-type">FILM / 2D ANIMATION</p><h3>Film &amp; Animation</h3><p>My film and animation work.</p></div>
-          </article>
-        </div>
+      <div class="hero-footer">
+        <span>BASED IN THE PHILIPPINES</span>
+        <span>CREATIVE PORTFOLIO · 2026</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-glow"></div>
+      <div class="profile-frame">
+        <img src="./profile.jpg" alt="John Mathew Bertos" class="profile-image">
+      </div>
+      <div class="floating-label label-top">✦ Creative Explorer</div>
+      <div class="floating-label label-bottom">Visual Storytelling</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="section-heading">
+      <span class="section-label">01 / ABOUT</span>
+      <h2>Turning ideas into <span class="gradient-text">visual experiences.</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card glass">
+        <span class="card-icon">✦</span>
+        <h3>Who I Am</h3>
+        <p>
+          I'm John Mathew Bertos, a multimedia student passionate about
+          visual storytelling, creative design, and digital media.
+        </p>
       </div>
 
-      <div class="project-panel" id="model-panel" role="tabpanel" aria-labelledby="model-tab" hidden>
-        <div class="media-grid">
-          <article class="media-card"><a class="media-image-link" href="./assets/3d/model-01.jpg" target="_blank" rel="noopener"><img class="media-image" src="./assets/3d/model-01.jpg" alt="3D model project 1" loading="lazy"></a><div class="media-caption"><p class="project-type">3D MODEL</p><h3>3D Model 01</h3></div></article>
-          <article class="media-card"><a class="media-image-link" href="./assets/3d/model-02.jpg" target="_blank" rel="noopener"><img class="media-image" src="./assets/3d/model-02.jpg" alt="3D model project 2" loading="lazy"></a><div class="media-caption"><p class="project-type">3D MODEL</p><h3>3D Model 02</h3></div></article>
-          <article class="media-card"><video class="media-video" controls preload="metadata" playsinline><source src="./assets/3d/animation-01.mp4" type="video/mp4">Your browser does not support video.</video><div class="media-caption"><p class="project-type">3D ANIMATION</p><h3>3D Animation 01</h3></div></article>
-          <article class="media-card"><video class="media-video" controls preload="metadata" playsinline><source src="./assets/3d/animation-02.mp4" type="video/mp4">Your browser does not support video.</video><div class="media-caption"><p class="project-type">3D ANIMATION</p><h3>3D Animation 02</h3></div></article>
-        </div>
+      <div class="about-card glass">
+        <span class="card-icon">◈</span>
+        <h3>What I Create</h3>
+        <p>
+          From cinematic projects to 3D environments and digital
+          illustrations, I enjoy transforming ideas into visual work.
+        </p>
       </div>
 
-      <div class="project-panel" id="art-panel" role="tabpanel" aria-labelledby="art-tab" hidden>
-        <div class="media-grid illustrations-grid">
-          <article class="media-card"><a class="media-image-link" href="./assets/illustrations/art-01.jpg" target="_blank" rel="noopener"><img class="media-image" src="./assets/illustrations/art-01.jpg" alt="Digital illustration 1" loading="lazy"></a><div class="media-caption"><p class="project-type">DIGITAL ART</p><h3>Illustration 01</h3></div></article>
-          <article class="media-card"><a class="media-image-link" href="./assets/illustrations/art-02.jpg" target="_blank" rel="noopener"><img class="media-image" src="./assets/illustrations/art-02.jpg" alt="Digital illustration 2" loading="lazy"></a><div class="media-caption"><p class="project-type">DIGITAL ART</p><h3>Illustration 02</h3></div></article>
-          <article class="media-card"><a class="media-image-link" href="./assets/illustrations/art-03.jpg" target="_blank" rel="noopener"><img class="media-image" src="./assets/illustrations/art-03.jpg" alt="Digital illustration 3" loading="lazy"></a><div class="media-caption"><p class="project-type">DIGITAL ART</p><h3>Illustration 03</h3></div></article>
-          <article class="media-card"><a class="media-image-link" href="./assets/illustrations/art-04.jpg" target="_blank" rel="noopener"><img class="media-image" src="./assets/illustrations/art-04.jpg" alt="Digital illustration 4" loading="lazy"></a><div class="media-caption"><p class="project-type">DIGITAL ART</p><h3>Illustration 04</h3></div></article>
-          <article class="media-card"><a class="media-image-link" href="./assets/illustrations/art-05.jpg" target="_blank" rel="noopener"><img class="media-image" src="./assets/illustrations/art-05.jpg" alt="Digital illustration 5" loading="lazy"></a><div class="media-caption"><p class="project-type">DIGITAL ART</p><h3>Illustration 05</h3></div></article>
-        </div>
+      <div class="about-card glass">
+        <span class="card-icon">⌘</span>
+        <h3>My Approach</h3>
+        <p>
+          Experimentation, curiosity, and continuous improvement
+          guide my creative process.
+        </p>
       </div>
-      <p class="project-note">Click images to view them larger. Videos can be played directly in the gallery.</p>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="contact-section">
-      <div class="wrap contact-inner"><p class="eyebrow">03 — LET'S CONNECT</p><h2>Have an idea?<br><span class="gradient-text">Let's make it real.</span></h2><p class="contact-copy">I'm always open to creative conversations, collaborations, and new opportunities.</p><a class="contact-mail" href="mailto:mathewbertos@gmail.com">mathewbertos@gmail.com <span>↗</span></a>
-      <div class="social-links"><a href="https://www.facebook.com/mathewprevails" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.instagram.com/mathewprevails/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div>
-    </section>
-  </main>
-  <footer class="footer wrap"><a href="#home" class="logo">JMB<span>✳</span></a><p>Designed with curiosity & creativity.</p><p>© 2026 John Mathew Bertos</p></footer>
+  <!-- PROJECTS -->
+  <section class="section projects-section" id="projects">
+    <div class="section-heading">
+      <span class="section-label">02 / SELECTED WORK</span>
+      <h2>My creative <span class="gradient-text">universe.</span></h2>
+      <p class="section-description">
+        A collection of projects exploring different forms of visual creativity.
+      </p>
+    </div>
 
-<script>
-document.querySelectorAll('.project-tab').forEach(function(tab){
-  tab.addEventListener('click',function(){
-    document.querySelectorAll('.project-tab').forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
-    document.querySelectorAll('.project-panel').forEach(function(p){p.classList.remove('active');p.hidden=true;});
-    tab.classList.add('active');tab.setAttribute('aria-selected','true');
-    var panel=document.getElementById(tab.dataset.panel);panel.hidden=false;panel.classList.add('active');
-  });
-});
-</script>
+    <!-- PROJECT CATEGORY TABS -->
+    <div class="gallery-tabs" role="tablist" aria-label="Project categories">
+      <button class="gallery-tab active" role="tab"
+              aria-selected="true" data-gallery="film">
+        Film & 2D Animation
+      </button>
+
+      <button class="gallery-tab" role="tab"
+              aria-selected="false" data-gallery="modeling">
+        3D Modeling
+      </button>
+
+      <button class="gallery-tab" role="tab"
+              aria-selected="false" data-gallery="illustrations">
+        Digital Illustrations
+      </button>
+    </div>
+
+    <!-- FILM GALLERY -->
+    <div class="gallery-panel active" id="film" role="tabpanel">
+      <div class="gallery-heading">
+        <div>
+          <span class="project-number">01</span>
+          <h3>Film & 2D Animation</h3>
+          <p>Motion, storytelling, and cinematic expression.</p>
+        </div>
+        <span class="project-count">01 VIDEO</span>
+      </div>
+
+      <div class="media-grid film-grid">
+        <article class="media-card film-card">
+          <div class="media-container">
+            <video controls playsinline preload="metadata">
+              <source src="https://zqauejfarzkrp7p5.public.blob.vercel-storage.com/film.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="media-caption">
+            <div>
+              <h4>Film Project</h4>
+              <p>Film / Motion Picture</p>
+            </div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- 3D MODELING GALLERY -->
+    <div class="gallery-panel" id="modeling" role="tabpanel" hidden>
+      <div class="gallery-heading">
+        <div>
+          <span class="project-number">02</span>
+          <h3>3D Modeling</h3>
+          <p>Digital objects, environments, and animation.</p>
+        </div>
+        <span class="project-count">04 MEDIA</span>
+      </div>
+
+      <div class="media-grid">
+        <article class="media-card">
+          <div class="media-container">
+            <img src="./assets/3d/model-01.jpg" alt="3D Model Project 01" loading="lazy">
+          </div>
+          <div class="media-caption">
+            <div>
+              <h4>3D Model 01</h4>
+              <p>3D Modeling</p>
+            </div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-container">
+            <img src="./assets/3d/model-02.jpg" alt="3D Model Project 02" loading="lazy">
+          </div>
+          <div class="media-caption">
+            <div>
+              <h4>3D Model 02</h4>
+              <p>3D Modeling</p>
+            </div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-container">
+            <video controls playsinline preload="metadata">
+              <source src="https://zqauejfarzkrp7p5.public.blob.vercel-storage.com/animation-01.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="media-caption">
+            <div>
+              <h4>3D Animation 01</h4>
+              <p>3D Animation</p>
+            </div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-container">
+            <video controls playsinline preload="metadata">
+              <source src="https://zqauejfarzkrp7p5.public.blob.vercel-storage.com/animation-02.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="media-caption">
+            <div>
+              <h4>3D Animation 02</h4>
+              <p>3D Animation</p>
+            </div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- DIGITAL ILLUSTRATIONS GALLERY -->
+    <div class="gallery-panel" id="illustrations" role="tabpanel" hidden>
+      <div class="gallery-heading">
+        <div>
+          <span class="project-number">03</span>
+          <h3>Digital Illustrations</h3>
+          <p>Color, imagination, and digital artwork.</p>
+        </div>
+        <span class="project-count">05 ARTWORKS</span>
+      </div>
+
+      <div class="media-grid illustration-grid">
+        <article class="media-card">
+          <div class="media-container">
+            <img src="./assets/illustrations/art-01.jpg" alt="Digital Illustration 01" loading="lazy">
+          </div>
+          <div class="media-caption">
+            <div><h4>Artwork 01</h4><p>Digital Illustration</p></div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-container">
+            <img src="./assets/illustrations/art-02.jpg" alt="Digital Illustration 02" loading="lazy">
+          </div>
+          <div class="media-caption">
+            <div><h4>Artwork 02</h4><p>Digital Illustration</p></div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-container">
+            <img src="./assets/illustrations/art-03.jpg" alt="Digital Illustration 03" loading="lazy">
+          </div>
+          <div class="media-caption">
+            <div><h4>Artwork 03</h4><p>Digital Illustration</p></div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-container">
+            <img src="./assets/illustrations/art-04.jpg" alt="Digital Illustration 04" loading="lazy">
+          </div>
+          <div class="media-caption">
+            <div><h4>Artwork 04</h4><p>Digital Illustration</p></div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-container">
+            <img src="./assets/illustrations/art-05.jpg" alt="Digital Illustration 05" loading="lazy">
+          </div>
+          <div class="media-caption">
+            <div><h4>Artwork 05</h4><p>Digital Illustration</p></div>
+            <span class="media-arrow">↗</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-card glass">
+      <span class="section-label">03 / CONTACT</span>
+      <h2>Let's create something <span class="gradient-text">meaningful.</span></h2>
+      <p>Have a project, collaboration, or opportunity in mind?</p>
+      <a class="button-primary" href="mailto:mathewbertos@gmail.com">
+        Get in Touch ↗
+      </a>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/mathewprevails" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+        <a href="https://www.instagram.com/mathewprevails/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="mailto:mathewbertos@gmail.com">Email ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#home" class="logo">JMB<span>.</span></a>
+    <p>© 2026 John Mathew Bertos. All rights reserved.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <!-- GALLERY TAB SCRIPT -->
+  <script>
+    const tabs = document.querySelectorAll(".gallery-tab");
+    const panels = document.querySelectorAll(".gallery-panel");
+
+    function showGallery(galleryId) {
+      tabs.forEach(tab => {
+        const isActive = tab.dataset.gallery === galleryId;
+        tab.classList.toggle("active", isActive);
+        tab.setAttribute("aria-selected", isActive);
+      });
+
+      panels.forEach(panel => {
+        const isActive = panel.id === galleryId;
+        panel.classList.toggle("active", isActive);
+        panel.hidden = !isActive;
+      });
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => showGallery(tab.dataset.gallery));
+
+      tab.addEventListener("keydown", event => {
+        if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+          event.preventDefault();
+          const direction = event.key === "ArrowRight" ? 1 : -1;
+          const nextIndex = (index + direction + tabs.length) % tabs.length;
+          tabs[nextIndex].focus();
+          showGallery(tabs[nextIndex].dataset.gallery);
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
